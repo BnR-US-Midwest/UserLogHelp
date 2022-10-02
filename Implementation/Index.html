@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UserLog Implementation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Implementation</h1>
+  <p>The UserLog library source code is written in C.  The implementation utilizes the existing ArEventLog library's function blocks to create, reference, and write to user logbooks.</p>
+  <p>It is not possible to write to any Automation Runtime system logbook with either UserLog or ArEventLog libraries.  Automation Runtime creates one logbook named "User", referenced with <code>"$arlogusr"</code>, and can be written to automatically with UserLogQuick.</p>
+  <p>Users can create logbooks in an <code>_INIT</code> routine using the UserLogCreate function and subsequently writing to those logbooks with UserLogMessage.</p>
+
+  <h2>Topics</h2>
+  <ul>
+    <li><a href="Features.html">Features</a></li>
+  </ul>
+</body>
+</html>

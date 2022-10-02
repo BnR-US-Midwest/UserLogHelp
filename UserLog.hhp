@@ -1,0 +1,19 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=UserLog.chm
+Contents file=TableOfContents.hhc
+Default Font=Arial,8,0
+Default Window=HelpWindow
+Default topic=Index.html
+Display compile progress=Yes
+Index file=Index.hhk
+Language=0x409 English (United States)
+Title=UserLog Library Help
+
+[WINDOWS]
+HelpWindow="UserLog Library Help","TableOfContents.hhc","Index.hhk",,,,,,,0x2120,,0x3006,[20,20,920,720],,,,,,,0
+
+[FILES]
+Index.html
+
+[INFOTYPES]
