@@ -29,6 +29,20 @@
         </object>
         </li>
       </ul>
+      <li> <object type="text/sitemap">
+        <param name="Name" value="Functions">
+        <param name="Local" value="Functions/Index.html">
+        <param name="ImageNumber" value="5">
+      </object>
+      </li>
+      <ul>
+        <li> <object type="text/sitemap">
+          <param name="Name" value="UserLogQuick">
+          <param name="Local" value="Functions/UserLogQuick/Index.html">
+          <param name="ImageNumber" value="5">
+        </object>
+        </li>
+      </ul>
     </ul>
   </ul>
 </body>
