@@ -1,3 +1,36 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+h1 {
+    font-size: 14pt;
+    border-bottom: 1pt solid;
+}
+
+h2 {
+    font-size: 13pt;
+}
+
+p, ul, table {
+    font-size: 9pt;
+}
+
+table {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: bold;
+    background-color: #999999;
+}
+
+td, th {
+    border: 1pt solid black;
+    padding: 2pt;
+}
+
+a {
+    color: blue;
+}

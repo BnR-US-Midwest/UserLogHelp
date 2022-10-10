@@ -2,10 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>UserLogQuick</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
   <h1>UserLogQuick</h1>
+
+  <p>Write to user logbook. Returns record ID if successful, zero otherwise.</p>
+
+  <h2>Function</h2>
+
+  <img src="UserLogQuick.svg" alt="UserLogQuick interface" style="width: 391px; height: 134px;">
+
+  <h2>Interface</h2>
+
+  <table>
+    <tr>
+      <th>I/O</th>
+      <th>Parameter</th>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>IN</td>
+      <td>severity</td>
+      <td>DINT</td>
+      <td>Use UserLogSeverityEnum or arEVENTLOG_SEVERITY constants</td>
+    </tr>
+  </table>
+
 </body>
 </html>
