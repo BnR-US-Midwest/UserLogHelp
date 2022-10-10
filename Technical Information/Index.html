@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>UserLog Implementation</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Technical Information</title>
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <h1>Implementation</h1>
+  <h1>Technical Information</h1>
 
   <p>The UserLog library's source code is written in C.  The implementation utilizes the ArEventLog library's function blocks to create, reference, and write to user logbooks.  Instead of function blocks which require multiple calls, UserLog includes functions which provide a single synchronous call.</p>
   
   <p>It is not possible to write to any Automation Runtime system logbook with either UserLog or ArEventLog.  Automation Runtime creates one logbook named "User", referenced with <code>"$arlogusr"</code>, that permits user writes.  This is done automatically with UserLogQuick and UserLogFormat.</p>
 
   <p>Users can create logbooks in an <i>_INIT</i> routine using UserLogCreate and subsequently writing to those logbooks with UserLogMessage.</p>
+
+  <p>UserLog is built for SG4 systems.</p>
 
   <h2>Topics</h2>
   <ul>

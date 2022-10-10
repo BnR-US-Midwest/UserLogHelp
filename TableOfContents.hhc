@@ -16,15 +16,15 @@
     </li>
     <ul>
       <li> <object type="text/sitemap">
-        <param name="Name" value="Implementation">
-        <param name="Local" value="Implementation/Index.html">
+        <param name="Name" value="Technical Information">
+        <param name="Local" value="Technical Information/Index.html">
         <param name="ImageNumber" value="5">
       </object>
       </li>
       <ul>
         <li> <object type="text/sitemap">
           <param name="Name" value="Features">
-          <param name="Local" value="Implementation/Features.html">
+          <param name="Local" value="Technical Information/Features.html">
           <param name="ImageNumber" value="11">
         </object>
         </li>
@@ -43,6 +43,12 @@
         </object>
         </li>
       </ul>
+      <li> <object type="text/sitemap">
+        <param name="Name" value="Data Types and Constants">
+        <param name="Local" value="Data Types and Constants/Index.html">
+        <param name="ImageNumber" value="5">
+      </object>
+      </li>
     </ul>
   </ul>
 </body>
