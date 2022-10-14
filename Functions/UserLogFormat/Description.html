@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Description</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <h1>Description</h1>
+
+  <p>This function performs the same operation as UserLogQuick with the addition of formatting runtime data.  The string <code>message</code> can include the <code>%</code> identifier to place runtime data.  The following data types are included in the <code>args</code> structure.</p>
+
+  <ul>
+    <li><code>%b</code> BOOL</li>
+    <li><code>%f</code> LREAL (double)</li>
+    <li><code>%i</code> DINT (signed long)</li>
+    <li><code>%s</code> STRING</li>
+  </ul>
+
+  <p>There are up to <code>USERLOG_FORMAT_INDEX + 1</code> entries of each argument type.</p>
+
+  <p>Depending on the UserLog's current severity level, set by UserLogSetSeverityLevel, this function's message can be suppressed.  If suppressed, nothing is written to the logbook and the function returns zero.</p>
+
+  <p>The size (or length) of the string passed to <code>message</code> is unrestricted because it is passed by reference.  This is denoted by STRING[0].  Messages in the UserLog library are truncated by <code>USERLOG_MESSAGE_LENGTH</code>.</p>
+
+  <p>The Event ID created for the record entry in the User logbook uses the user's <code>severity</code> and <code>code</code>, then the facility <code>USERLOG_FACILITY</code>.  To use a custom facility, see UserLogMessage.</p>
+
+  <p>If an error occurs during execution, an automatic message will be written to the User logbook with a description of the error.  The function will return zero.</p>
+
+</body>
+</html>

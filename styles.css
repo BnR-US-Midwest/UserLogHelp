@@ -16,17 +16,17 @@ p, ul, table {
 }
 
 table {
-    text-align: left;
     width: 100%;
     border-collapse: collapse;
 }
 
 th {
     font-weight: bold;
-    background-color: #999999;
+    background-color: #dbdbdb;
 }
 
 td, th {
+    text-align: left;
     border: 1pt solid black;
     padding: 2pt;
 }
