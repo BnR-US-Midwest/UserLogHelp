@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Description</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <h1>Description</h1>
+
+  <p>The UserLogMessage function provides all features of the ArEventLogWrite function block and more, synchronously.  The record's event ID is create from <code>severity</code>, <code>facility</code>, and <code>code</code>.  An <code>origin</code> ID is optionally available to create a record hierarchy.  <code>message</code> is written to the additional log data with <code>arEVENTLOG_ADDFORMAT_TEXT</code>.  <code>object</code> ID provides a optional description from the creator of the record.</p>
+
+  <p>The timestamp of the record is automatically set with the time at the call of this function.  If <code>object</code> is left NULL, UserLogMessage will automatically read the software object (program) from which this function was called.</p>
+
+  <p>Depending on the UserLog's current severity level, set by UserLogSetSeverityLevel, this function's message can be suppressed.  If suppressed, nothing is written to the logbook and the function returns zero.</p>
+
+  <p>Just as in <a href="../UserLogFormat/Index.html">UserLogFormat</a>, an arguments structure can be passed with identifies in <code>message</code> to automatically format runtime data.</p>
+
+  <p>If an error occurs during execution, an automatic message will be written to the User logbook with a description of the error.  The function will return zero.</p>
+
+</body>
+</html>

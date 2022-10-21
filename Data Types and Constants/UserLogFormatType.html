@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UserLogFormatType</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <h1>UserLogFormatType</h1>
+
+  <table>
+    <tr>
+      <th>Parameter</th>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td>ARRAY [0..USERLOG_FORMAT_INDEX] OF BOOL</td>
+      <td>Place boolean (TRUE or FALSE)</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>ARRAY [0..USERLOG_FORMAT_INDEX] OF LREAL</td>
+      <td>Place double</td>
+    </tr>
+    <tr>
+      <td>i</td>
+      <td>ARRAY [0..USERLOG_FORMAT_INDEX] OF DINT</td>
+      <td>Place integer (32-bit signed)</td>
+    </tr>
+    <tr>
+      <td>s</td>
+      <td>ARRAY [0..USERLOG_FORMAT_INDEX] OF STRING [USERLOG_FORMAT_LENGTH]</td>
+      <td>Place string</td>
+    </tr>
+  </table>
+
+</body>
+</html>

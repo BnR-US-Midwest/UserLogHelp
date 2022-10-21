@@ -24,7 +24,7 @@
 
   <p>The size (or length) of the string passed to <code>message</code> is unrestricted because it is passed by reference.  This is denoted by STRING[0].  Messages in the UserLog library are truncated by <code>USERLOG_MESSAGE_LENGTH</code>.</p>
 
-  <p>The Event ID created for the record entry in the User logbook uses the user's <code>severity</code> and <code>code</code>, then the facility <code>USERLOG_FACILITY</code>.  To use a custom facility, see UserLogMessage.</p>
+  <p>The Event ID created for the record entry in the User logbook uses parameters <code>severity</code> and <code>code</code>, then the facility <code>USERLOG_FACILITY</code>.  To use a custom facility, see UserLogMessage.</p>
 
   <p>If an error occurs during execution, an automatic message will be written to the User logbook with a description of the error.  The function will return zero.</p>
 

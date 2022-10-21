@@ -7,6 +7,10 @@ h1 {
     border-bottom: 1pt solid;
 }
 
+h1.new-header, h2.new-header {
+    padding-top: 25pt;
+}
+
 h2 {
     font-size: 13pt;
 }

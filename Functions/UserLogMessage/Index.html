@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>UserLogMessage</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <h1>UserLogMessage</h1>
+
+  <p>Write to logbook synchronously. Returns record ID if successful, zero otherwise.</p>
+
+  <h2>Function</h2>
+
+  <img src="UserLogMessage.svg" alt="UserLogMessage interface" style="width: 491px; height: 249px;">
+
+  <h2>Interface</h2>
+
+  <table>
+    <tr>
+      <th>I/O</th>
+      <th>Parameter</th>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>IN</td>
+      <td>logbook</td>
+      <td>STRING[0]</td>
+      <td>Name of logbook</td>
+    </tr>
+    <tr>
+      <td>IN</td>
+      <td>severity</td>
+      <td>DINT</td>
+      <td>Use UserLogSeverityEnum or arEVENTLOG_SEVERITY constants</td>
+    </tr>
+    <tr>
+      <td>IN</td>
+      <td>facility</td>
+      <td>UINT</td>
+      <td>0..15 application area 16..4095 3rd-party device area</td>
+    </tr>
+    <tr>
+      <td>IN</td>
+      <td>code</td>
+      <td>UINT</td>
+      <td>0..65535 unique code</td>
+    </tr>
+    <tr>
+      <td>IN</td>
+      <td>origin</td>
+      <td>ArEventLogRecordIDType</td>
+      <td>(Optional) Origin record ID</td>
+    </tr>
+    <tr>
+      <td>IN</td>
+      <td>object</td>
+      <td>STRING[0]</td>
+      <td>(Optional) Object name</td>
+    </tr>
+    <tr>
+      <td>IN</td>
+      <td>message</td>
+      <td>STRING[0]</td>
+      <td>ASCII data message</td>
+    </tr>
+    <tr>
+      <td>IN</td>
+      <td>args</td>
+      <td>UserLogFormatType</td>
+      <td>Format arguments</td>
+    </tr>
+    <tr>
+      <td>OUT</td>
+      <td>return</td>
+      <td>UDINT</td>
+      <td>Record ID if successful, zero otherwise</td>
+    </tr>
+  </table>
+
+  <h2>Topics</h2>
+
+  <ul>
+    <li><a href="Description.html">Description</a></li>
+  </ul>
+
+</body>
+</html>
