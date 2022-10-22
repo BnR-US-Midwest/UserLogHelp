@@ -10,9 +10,9 @@
 
   <table>
     <tr>
-      <th>Parameter</th>
-      <th>Data Type</th>
-      <th>Value</th>
+      <th style="width: 180px;">Parameter</th>
+      <th style="width: 60px;">Data Type</th>
+      <th style="width: 80px;">Value</th>
       <th>Description</th>
     </tr>
     <tr>
@@ -25,7 +25,31 @@
       <td>USERLOG_ERROR_IDENT</td>
       <td>DINT</td>
       <td>-536664304</td>
-      <td>An error occurred when calling ArEventLogGetIdent. See user logbook for details</td>
+      <td>An error occurred when calling ArEventLogGetIdent. See User logbook for details</td>
+    </tr>
+    <tr>
+      <td>USERLOG_ERROR_WRITE</td>
+      <td>DINT</td>
+      <td>-536664294</td>
+      <td>An error occurred when calling ArEventLogWrite. See User logbook for details</td>
+    </tr>
+    <tr>
+      <td>USERLOG_ERROR_CREATE</td>
+      <td>DINT</td>
+      <td>-536664284</td>
+      <td>An error occurred when calling ArEventLogCreate. See User logbook for details</td>
+    </tr>
+    <tr>
+      <td>USERLOG_FORMAT_INDEX</td>
+      <td>USINT</td>
+      <td>4</td>
+      <td>Maximum index of each argument type</td>
+    </tr>
+    <tr>
+      <td>USERLOG_FORMAT_LENGTH</td>
+      <td>USINT</td>
+      <td>80</td>
+      <td>Length of string argument</td>
     </tr>
   </table>
 </body>

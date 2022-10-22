@@ -28,6 +28,12 @@
           <param name="ImageNumber" value="11">
         </object>
         </li>
+        <li> <object type="text/sitemap">
+          <param name="Name" value="Additional Notes">
+          <param name="Local" value="Technical Information/Additional Notes.html">
+          <param name="ImageNumber" value="11">
+        </object>
+        </li>
       </ul>
       <li> <object type="text/sitemap">
         <param name="Name" value="Functions">
@@ -137,6 +143,12 @@
         <li> <object type="text/sitemap">
           <param name="Name" value="UserLogFormatType">
           <param name="Local" value="Data Types and Constants/UserLogFormatType.html">
+          <param name="ImageNumber" value="11">
+        </object>
+        </li>
+        <li> <object type="text/sitemap">
+          <param name="Name" value="Constants">
+          <param name="Local" value="Data Types and Constants/Constants.html">
           <param name="ImageNumber" value="11">
         </object>
         </li>

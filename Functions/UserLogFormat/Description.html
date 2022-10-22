@@ -9,7 +9,7 @@
 <body>
   <h1>Description</h1>
 
-  <p>This function performs the same operation as UserLogQuick with the addition of formatting runtime data.  The string <code>message</code> can include the <code>%</code> identifier to place runtime data.  The following data types are included in the <code>args</code> structure.</p>
+  <p>This function performs the same operation as <a href="../UserLogQuick/Index.html">UserLogQuick</a> with the addition of formatting runtime data.  The string <code>message</code> can include the <code>%</code> identifier to place runtime data.  The following data types are included in the <code>args</code> structure.</p>
 
   <ul>
     <li><code>%b</code> BOOL</li>
@@ -18,13 +18,13 @@
     <li><code>%s</code> STRING</li>
   </ul>
 
-  <p>There are up to <code>USERLOG_FORMAT_INDEX + 1</code> entries of each argument type.</p>
+  <p>There are up to <code><a href="../../Data Types and Constants/Constants.html">USERLOG_FORMAT_INDEX</a> + 1</code> entries of each argument type.</p>
 
-  <p>Depending on the UserLog's current severity level, set by UserLogSetSeverityLevel, this function's message can be suppressed.  If suppressed, nothing is written to the logbook and the function returns zero.</p>
+  <p>Depending on the UserLog's current severity level, set by <a href="../UserLogCreate/Index.html">UserLogSetSeverityLevel</a>, this function's message can be suppressed.  If suppressed, nothing is written to the logbook and the function returns zero.</p>
 
-  <p>The size (or length) of the string passed to <code>message</code> is unrestricted because it is passed by reference.  This is denoted by STRING[0].  Messages in the UserLog library are truncated by <code>USERLOG_MESSAGE_LENGTH</code>.</p>
+  <p>The size (or length) of the string passed to <code>message</code> is unrestricted because it is passed by reference.  This is denoted by STRING[0].  Messages in the UserLog library are truncated by <a href="../../Data Types and Constants/Constants.html"><code>USERLOG_MESSAGE_LENGTH</code></a>.</p>
 
-  <p>The Event ID created for the record entry in the User logbook uses parameters <code>severity</code> and <code>code</code>, then the facility <code>USERLOG_FACILITY</code>.  To use a custom facility, see UserLogMessage.</p>
+  <p>The Event ID created for the record entry in the User logbook uses parameters <code>severity</code> and <code>code</code>, then the facility <a href="../../Data Types and Constants/Constants.html"><code>USERLOG_FACILITY</code></a>.  To use a custom facility, see <a href="../UserLogMessage/Index.html">UserLogMessage</a>.</p>
 
   <p>If an error occurs during execution, an automatic message will be written to the User logbook with a description of the error.  The function will return zero.</p>
 

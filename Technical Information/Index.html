@@ -8,17 +8,20 @@
 <body>
   <h1>Technical Information</h1>
 
-  <p>UserLog's source code is written in C.  The implementation utilizes the ArEventLog library's function blocks to create, reference, and write to user logbooks.  Instead of function blocks, which require multiple calls, UserLog includes functions to use as a single synchronous call.</p>
+  <p>UserLog's source code is written in C.  The implementation utilizes ArEventLog's function blocks to create, reference, and write to user logbooks.  Instead of function blocks, which require multiple calls, UserLog includes functions to use as a single synchronous call.</p>
   
-  <p>It is not possible to write to any Automation Runtime system logbook with either UserLog or ArEventLog.  Automation Runtime creates one logbook named "User", referenced with <code>"$arlogusr"</code>, that permits user writes.  This is done automatically with UserLogQuick and UserLogFormat.</p>
+  <p>It is not possible to write to any Automation Runtime system logbook with either UserLog or ArEventLog.  Automation Runtime creates one logbook named "User", referenced with <code>$arlogusr</code>, that permits user writes.  This is done automatically with <a href="../Functions/UserLogQuick/Index.html">UserLogQuick</a> and <a href="../Functions/UserLogFormat/Index.html">UserLogFormat</a>.</p>
 
-  <p>Users can create logbooks in an <i>_INIT</i> routine using UserLogCreate and subsequently writing to those logbooks with UserLogMessage.</p>
+  <p>Users can create logbooks in an _INIT routine using <a href="../Functions/UserLogCreate/Index.html">UserLogCreate</a> and subsequently writing to those logbooks with <a href="../Functions/UserLogMessage/Index.html">UserLogMessage</a>.</p>
 
   <p>UserLog is built for SG4 systems.</p>
+
+  <p>UserLog is open source an available on <a href="https://github.com/tmatijevich/UserLog" target="_blank">GitHub</a>.  New releases can be viewed <a href="https://github.com/tmatijevich/UserLog/releases" target="_blank">here</a>.</p>
 
   <h2>Topics</h2>
   <ul>
     <li><a href="Features.html">Features</a></li>
+    <li><a href="Additional Notes.html">Additional Notes</a></li>
   </ul>
 </body>
 </html>
