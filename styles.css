@@ -16,7 +16,7 @@ h2 {
 }
 
 p, ul, table {
-    font-size: 9pt;
+    font-size: 10pt;
 }
 
 table {
@@ -33,6 +33,21 @@ td, th {
     text-align: left;
     border: 1pt solid black;
     padding: 2pt;
+}
+
+div.note {
+    background-color: #eeeeee;
+    border: 2pt solid;
+    border-color: #6699ff;
+    font-size: 10pt;
+    padding: 5pt;
+}
+
+div.code {
+    background-color: #eeeeee;
+    font-size: 10pt;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5pt;
 }
 
 a {

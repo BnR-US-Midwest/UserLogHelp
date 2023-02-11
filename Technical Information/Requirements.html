@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Requirements</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <h1>Requirements</h1>
+
+  <p>UserLog reports function errors to the User logbook.  The list of possible errors is as follows.</p>
+
+  <table>
+    <tr>
+      <th>Error Constant</th>
+      <th style="width: 120px;">Event ID (Text ID)</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><code>USERLOG_ERROR_IDENT</code></td>
+      <td>-515234032</td>
+      <td>UserLog could not identify the logbook by the name provided. Please see ArEventLog error.</td>
+    </tr>
+    <tr>
+      <td><code>USERLOG_ERROR_WRITE</code></td>
+      <td>-515234022</td>
+      <td>UserLog could not write to the logbook. Please see ArEventLog error.</td>
+    </tr>
+    <tr>
+      <td><code>USERLOG_ERROR_CREATE</code></td>
+      <td>-515234012</td>
+      <td>UserLog could not create the logbook. Please see ArEventLog error.</td>
+    </tr>
+  </table>
+
+  <p>For each error, the logbook record entry will include the specific ArEventLog error number encountered during runtime.</p>
+
+  <div class="note">
+    The UserLog error reporting requires the UserLog.tmx User Event Texts file to be deployed to the active configuration's Textsystem Configuration.
+  </div>
+  
+  <p>This is achieved by first adding a Project.language file in Logical View, then adding and configuring a TC.textconfig file in the Physical View.</p>
+
+  <p>These instructions can also be followed for any User Event Texts file.</p>
+
+  <h2>Project Language</h2>
+
+  <p>In Logical View, navigate to the Toolbox to find a Project Languages object.</p>
+
+  <img src="Project languages from Toolbox.png" alt="Project languages from Toolbox" style="width: 450px; height: 244px;">
+
+  <br>
+
+  <img src="Project language in Logical View.png" alt="Project language in Logical View" style="width: 383px; height: 193px;">
+
+  <h2>Text System Configuration</h2>
+
+  <p>In Configuration View, select the TextSystem package and choose Textsystem Configuration from the Toolbox.</p>
+
+  <img src="Textsystem configuration in Configuration View.png" alt="Textsystem configuration in Configuration View" style="width: 474px; height: 241px;">
+
+  <p>Set the language fields and then select UserLog.tmx from the dropbox in the next available field of the tmx files list.</p>
+
+  <img src="Textsystem configuration.png" alt="Textsystem configuration" style="width: 645px; height: 289px;">
+
+</body>
+</html>

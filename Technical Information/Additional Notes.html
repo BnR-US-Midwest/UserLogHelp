@@ -10,8 +10,54 @@
 
   <h2>Text System</h2>
 
-  <p>Messages written with the UserLog library are compatible with the Automation Studio text system.  User event localized text files can be created with namespace <code>User/EventLog</code>.  The Text ID should match the event ID create with the message written by UserLog.  See ArEventLogMakeEventID for more information.</p>
+  <p>Messages written with the UserLog library are compatible with the Automation Studio text system.  User Event Text files can be created with namespace <code>User/EventLog</code>.  The Text ID should match the Event ID created of the message written with UserLog.  See ArEventLogMakeEventID for more information.</p>
 
-  <p>A text system configuration is required to deploy text files to your configuration.</p>
+  <h2>Example</h2>
+
+  <p><a href="../Functions/UserLogBasic/Index.html">UserLogBasic</a> not only writes a message from code, but can link an additional description through the text system.</p>
+
+  <div class="code">
+    UserLogBasic(USERLOG_SEVERITY_INFORMATION, 1234, 'Hello World!');
+  </div>
+
+  <p>The Event ID for this example is 1611269330.  The severity is 1 (INFORMATION), the facility is 10 (USERLOG_FACILITY), and the code is 1234.  See ArEventLogMakeEventID for more information on how to derive the 32-bit Event ID.</p>
+
+  <table>
+    <tr>
+      <th>Bit(s)</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>0..15</td>
+      <td>Code 0..65535</td>
+    </tr>
+    <tr>
+      <td>16..27</td>
+      <td>Facility 0..4095</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Reserved (0 for customized event IDs)</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>Customer (1 for customized event IDs)</td>
+    </tr>
+    <tr>
+        <td>30..31</td>
+        <td>Severity 0..3 (Success, Information, Warning, Error)</td>
+    </tr>
+  </table>
+
+  <p>A User Event Texts file can be created to assign text to Text IDs (Event IDs).  The setup requirements for User Event Text files can be followed <a href="Requirements.html">here</a>.</p>
+
+  <img src="User Event Texts sample file.png" alt="User Event Texts sample file" style="width: 733px; height: 190px;">
+
+  <p>The logger will show the following results.</p>
+
+  <img src="UserLogBasic with User Event Texts.png" alt="UserLogBasic with User Event Texts" style="width: 992px; height: 204px;">
+
+  <p>The methods in this example can also applied to <a href="../Functions/UserLogAdvanced/Index.html">UserLogAdvanced</a> and <a href="../Functions/UserLogCustom/Index.html">UserLogCustom</a>.</p>
+
 </body>
 </html>

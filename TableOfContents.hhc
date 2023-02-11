@@ -29,6 +29,12 @@
         </object>
         </li>
         <li> <object type="text/sitemap">
+          <param name="Name" value="Requirements">
+          <param name="Local" value="Technical Information/Requirements.html">
+          <param name="ImageNumber" value="11">
+        </object>
+        </li>
+        <li> <object type="text/sitemap">
           <param name="Name" value="Additional Notes">
           <param name="Local" value="Technical Information/Additional Notes.html">
           <param name="ImageNumber" value="11">
