@@ -63,15 +63,15 @@
           </li>
         </ul>
         <li> <object type="text/sitemap">
-          <param name="Name" value="UserLogFormat">
-          <param name="Local" value="Functions/UserLogFormat/Index.html">
+          <param name="Name" value="UserLogAdvanced">
+          <param name="Local" value="Functions/UserLogAdvanced/Index.html">
           <param name="ImageNumber" value="5">
         </object>
         </li>
         <ul>
           <li> <object type="text/sitemap">
             <param name="Name" value="Description">
-            <param name="Local" value="Functions/UserLogFormat/Description.html">
+            <param name="Local" value="Functions/UserLogAdvanced/Description.html">
             <param name="ImageNumber" value="11">
           </object>
           </li>

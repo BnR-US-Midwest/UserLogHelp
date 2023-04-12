@@ -47,11 +47,12 @@ div.note {
     padding: 5pt;
 }
 
-div.code {
+div.code, pre.code {
     background-color: #eeeeee;
     font-size: 10pt;
     font-family: 'Courier New', Courier, monospace;
     padding: 5pt;
+    margin: 10pt 0pt;
 }
 
 a {

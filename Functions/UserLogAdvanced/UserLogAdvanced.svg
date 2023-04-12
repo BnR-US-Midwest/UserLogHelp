@@ -2,7 +2,7 @@
 <svg version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
-    width="460px"
+    width="465px"
     height="157px">
     <defs>
         <linearGradient
@@ -75,32 +75,32 @@
             <stop offset="50%" stop-color="#e4e4e4"/>
             <stop offset="100%" stop-color="#ffffff"/>
         </linearGradient>
-        <rect id="FB_Header" height="23px" width="189px" fill="url(#linearGradient_FB_Header)" stroke="black"/>
-        <rect id="FB_Body" height="92px" width="189px" fill="#ffffff"/>
-        <rect id="FB_BodyArea1" height="92px" width="189px" fill="url(#linearGradient_FB_BodyArea_1)"/>
-        <rect id="FB_BodyArea2" height="0px" width="189px" fill="url(#linearGradient_FB_BodyArea_2)"/>
-        <rect id="FB_BodyFrame" height="115px" width="189px" stroke="black" style="fill:none;fill-opacity:1"/>
+        <rect id="FB_Header" height="23px" width="194px" fill="url(#linearGradient_FB_Header)" stroke="black"/>
+        <rect id="FB_Body" height="92px" width="194px" fill="#ffffff"/>
+        <rect id="FB_BodyArea1" height="92px" width="194px" fill="url(#linearGradient_FB_BodyArea_1)"/>
+        <rect id="FB_BodyArea2" height="0px" width="194px" fill="url(#linearGradient_FB_BodyArea_2)"/>
+        <rect id="FB_BodyFrame" height="115px" width="194px" stroke="black" style="fill:none;fill-opacity:1"/>
     </defs>
     <use x="174px" y="44px" xlink:href="#FB_Body"/>
     <use x="174px" y="44px" xlink:href="#FB_BodyArea1"/>
     <use x="174px" y="136px" xlink:href="#FB_BodyArea2"/>
     <use x="174px" y="21px" xlink:href="#FB_BodyFrame"/>
     <use x="174px" y="21px" xlink:href="#FB_Header"/>
-    <text x="268px" y="37px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:middle;writing-mode:lr">UserLogFormat</text>
+    <text x="271px" y="37px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:middle;writing-mode:lr">UserLogAdvanced</text>
     <path d="M 148,55,174,55" stroke="black"/>
     <text x="135px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:end;writing-mode:lr">DINT</text>
-    <text x="187px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">severity</text>
+    <text x="187px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">Severity</text>
     <path d="M 148,79,174,79" stroke="black"/>
     <text x="135px" y="83px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:end;writing-mode:lr">UINT</text>
-    <text x="187px" y="83px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">code</text>
+    <text x="187px" y="83px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">Code</text>
     <path d="M 148,101,174,101" stroke="black"/>
     <text x="135px" y="106px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:end;writing-mode:lr">STRING</text>
-    <text x="187px" y="106px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">message</text>
+    <text x="187px" y="106px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">Message</text>
     <path d="M 148,125,174,125" stroke="black"/>
     <text x="135px" y="129px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:end;writing-mode:lr">UserLogFormatType</text>
-    <text x="187px" y="129px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">args</text>
-    <path d="M 363,55,389,55" stroke="black"/>
-    <text x="402px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">UDINT</text>
-    <text x="350px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:end;writing-mode:lr">return</text>
+    <text x="187px" y="129px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">Values</text>
+    <path d="M 368,55,394,55" stroke="black"/>
+    <text x="407px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">UDINT</text>
+    <text x="355px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:end;writing-mode:lr">Return</text>
 </svg>
 

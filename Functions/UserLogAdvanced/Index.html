@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>UserLogFormat</title>
+  <title>UserLogAdvanced</title>
   <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
-  <h1>UserLogFormat</h1>
+  <h1>UserLogAdvanced</h1>
 
-  <p>Write to user logbook with runtime data.  Returns record ID if successful, zero otherwise.</p>
+  <p>Write to the User logbook with runtime data.</p>
+
+  <p>If successful, this function returns the record ID (type <code>ArEventLogRecordIDType</code>) of the event created in the User logbook.  If an error occurred, an error message is written to the User logbook and the function returns zero.</p>
 
   <h2>Function</h2>
 
-  <img src="UserLogFormat.svg" alt="UserLogFormat interface" style="width: 460px; height: 157px;">
+  <img src="UserLogAdvanced.svg" alt="UserLogAdvanced interface" style="width: 465px; height: 157px;">
 
   <h2>Interface</h2>
 
@@ -26,31 +28,31 @@
     </tr>
     <tr>
       <td>IN</td>
-      <td>severity</td>
+      <td>Severity</td>
       <td>DINT</td>
       <td>Use <a href="../../Data Types and Constants/UserLogSeverityEnum.html">UserLogSeverityEnum</a> or arEVENTLOG_SEVERITY constants</td>
     </tr>
     <tr>
       <td>IN</td>
-      <td>code</td>
+      <td>Code</td>
       <td>UINT</td>
-      <td>0..65535 unique code</td>
+      <td>0..65535</td>
     </tr>
     <tr>
       <td>IN</td>
-      <td>message</td>
+      <td>Message</td>
       <td>STRING[0]</td>
-      <td>ASCII data message</td>
+      <td>Event description with optional format specifiers</td>
     </tr>
     <tr>
       <td>IN</td>
-      <td>args</td>
+      <td>Values</td>
       <td><a href="../../Data Types and Constants/UserLogFormatType.html">UserLogFormatType</a></td>
-      <td>Format arguments</td>
+      <td>Format values to replace specifiers (%b, %f, %i, %s)</td>
     </tr>
     <tr>
       <td>OUT</td>
-      <td>return</td>
+      <td>Return</td>
       <td>UDINT</td>
       <td>Record ID if successful, zero otherwise</td>
     </tr>

@@ -9,7 +9,7 @@
 <body>
   <h1>Description</h1>
 
-  <p>This function performs the same operation as <a href="../UserLogQuick/Index.html">UserLogQuick</a> with the addition of formatting runtime data.  The string <code>message</code> can include the <code>%</code> identifier to place runtime data.  The following data types are included in the <code>args</code> structure.</p>
+  <p>This function performs the same operation as <a href="../UserLogBasic/Index.html">UserLogBasic</a> with the addition of format specifiers replaced by runtime data.  The STRING <code>Message</code> can include the <code>%</code> identifier with format specifier to place runtime data.  The following data types are included in the <code>Values</code> structure.</p>
 
   <ul>
     <li><code>%b</code> BOOL</li>
@@ -18,15 +18,69 @@
     <li><code>%s</code> STRING</li>
   </ul>
 
-  <p>There are up to <code><a href="../../Data Types and Constants/Constants.html">USERLOG_FORMAT_INDEX</a> + 1</code> entries of each argument type.</p>
+  <p>There are up to <code><a href="../../Data Types and Constants/Constants.html">USERLOG_FORMAT_INDEX</a> + 1</code> entries of each data type.</p>
 
-  <p>Depending on the UserLog's current severity level, set by <a href="../UserLogCreate/Index.html">UserLogSetSeverityLevel</a>, this function's message can be suppressed.  If suppressed, nothing is written to the logbook and the function returns zero.</p>
+  <p>Depending on UserLog's current severity level, set by <a href="../UserLogSetSeverityLevel/Index.html">UserLogSetSeverityLevel</a>, this function's message can be suppressed.  If suppressed, nothing is written to the logbook and the function returns zero.</p>
 
-  <p>The size (or length) of the string passed to <code>message</code> is unrestricted because it is passed by reference.  This is denoted by STRING[0].  Messages in the UserLog library are truncated by <a href="../../Data Types and Constants/Constants.html"><code>USERLOG_MESSAGE_LENGTH</code></a>.</p>
+  <p>The size (or length) of the string passed to <code>Message</code> is unrestricted because it is passed by reference.  This is denoted by STRING[0].  Messages in the UserLog library are truncated by <a href="../../Data Types and Constants/Constants.html"><code>USERLOG_MESSAGE_LENGTH</code></a>.</p>
 
-  <p>The Event ID created for the record entry in the User logbook uses parameters <code>severity</code> and <code>code</code>, then the facility <a href="../../Data Types and Constants/Constants.html"><code>USERLOG_FACILITY</code></a>.  To use a custom facility, see <a href="../UserLogMessage/Index.html">UserLogMessage</a>.</p>
+  <p>The Event ID created for the record entry in the User logbook uses parameters <code>Severity</code> and <code>Code</code> with facility <a href="../../Data Types and Constants/Constants.html"><code>USERLOG_FACILITY</code></a>.  To use a custom facility, see <a href="../UserLogCustom/Index.html">UserLogCustom</a>.</p>
 
   <p>If an error occurs during execution, an automatic message will be written to the User logbook with a description of the error.  The function will return zero.</p>
+
+  <h2>Example</h2>
+
+  <h3>IEC Structured Text</h3>
+
+  <pre class="code">
+VAR
+  FormatValues : UserLogFormatType;
+  Severity : USINT;
+  Facility : UINT;
+  Code : UINT;
+END_VAR</pre>
+
+  <pre class="code">
+FormatValues.b[0] := FALSE;
+FormatValues.f[0] := 23.1;
+FormatValues.i[0] := -1070586087;
+FormatValues.s[0] := 'Starting';
+UserLogAdvanced(USERLOG_SEVERITY_INFORMATION, 567, 'Error=%b, Temperature=%f C, StatusID=%i, State=%s', FormatValues);</pre>
+
+  <ul>
+    <li>Severity: <code>USERLOG_SEVERITY_INFORMATION</code> (1)</li>
+    <li>Facility: <code>USERLOG_FACILITY</code> (10)</li>
+    <li>Code: 567</li>
+    <li>Event ID: 1611268663</li>
+  </ul>
+
+  <img src="UserLogAdvanced IECST.png" alt="UserLogAdvanced ST example" style="width: 1039px; height: 533px;">
+
+  <h3>ANSI C</h3>
+
+  <pre class="code">
+VAR
+  FormatValues : UserLogFormatType;
+  Severity : USINT;
+  Facility : UINT;
+  Code : UINT;
+END_VAR</pre>
+
+  <pre class="code">
+FormatValues.b[0] = false;
+FormatValues.f[0] = 23.1;
+FormatValues.i[0] = -1070586087;
+strcpy(FormatValues.s[0], "Starting");
+UserLogAdvanced(USERLOG_SEVERITY_INFORMATION, 567, "Error=%b, Temperature=%f C, StatusID=%i, State=%s", &FormatValues);</pre>
+
+  <ul>
+    <li>Severity: <code>USERLOG_SEVERITY_INFORMATION</code> (1)</li>
+    <li>Facility: <code>USERLOG_FACILITY</code> (10)</li>
+    <li>Code: 567</li>
+    <li>Event ID: 1611268663</li>
+  </ul>
+
+  <img src="UserLogAdvanced ANSIC.png" alt="UserLogAdvanced C example" style="width: 1039px; height: 533px;">
 
 </body>
 </html>
