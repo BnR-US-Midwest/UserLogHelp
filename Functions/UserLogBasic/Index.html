@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>UserLogQuick</title>
+  <title>UserLogBasic</title>
   <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
-  <h1>UserLogQuick</h1>
+  <h1>UserLogBasic</h1>
 
-  <p>Write to user logbook. Returns record ID if successful, zero otherwise.</p>
+  <p>Write to the User logbook synchronously.</p>
+
+  <p>If successful, this function returns the record ID (type <code>ArEventLogRecordIDType</code>) of the event created in the User logbook.  If an error occurred, an error message is written to the User logbook and the function returns zero.</p>
 
   <h2>Function</h2>
 
-  <img src="UserLogQuick.svg" alt="UserLogQuick interface" style="width: 391px; height: 134px;">
+  <img src="UserLogBasic.svg" alt="UserLogBasic interface" style="width: 396px; height: 134px;">
 
   <h2>Interface</h2>
 
@@ -26,25 +28,25 @@
     </tr>
     <tr>
       <td>IN</td>
-      <td>severity</td>
+      <td>Severity</td>
       <td>DINT</td>
       <td>Use <a href="../../Data Types and Constants/UserLogSeverityEnum.html">UserLogSeverityEnum</a> or arEVENTLOG_SEVERITY constants</td>
     </tr>
     <tr>
       <td>IN</td>
-      <td>code</td>
+      <td>Code</td>
       <td>UINT</td>
-      <td>0..65535 unique code</td>
+      <td>0..65535</td>
     </tr>
     <tr>
       <td>IN</td>
-      <td>message</td>
+      <td>Message</td>
       <td>STRING[0]</td>
-      <td>ASCII data message</td>
+      <td>Event description</td>
     </tr>
     <tr>
       <td>OUT</td>
-      <td>return</td>
+      <td>Return</td>
       <td>UDINT</td>
       <td>Record ID if successful, zero otherwise</td>
     </tr>

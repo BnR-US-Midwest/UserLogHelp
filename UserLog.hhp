@@ -11,7 +11,7 @@ Language=0x409 English (United States)
 Title=UserLog Library Help
 
 [WINDOWS]
-HelpWindow="UserLog Library Help","TableOfContents.hhc","Index.hhk",,,,,,,0x2120,,0x3006,[20,20,920,720],,,,,,,0
+HelpWindow="UserLog Library Help","TableOfContents.hhc","Index.hhk",,,,,,,0x2120,,0x3006,[20,20,1120,820],,,,,,,0
 
 [FILES]
 Index.html

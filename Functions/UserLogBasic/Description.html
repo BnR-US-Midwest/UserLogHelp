@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Description</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <h1>Description</h1>
+
+  <p><a href="Index.html">UserLogBasic</a> is the most user-friendly function of the UserLog libray with only three input parameters and a single call to execute.  The STRING <code>Message</code> is written directly to the User logbook (a logbook automatically created by Automation Runtime).  The message can be categorized with the <code>Severity</code> and <code>Code</code> parameters.</p>
+
+  <p>Depending on UserLog's current severity level, set by <a href="../UserLogSetSeverityLevel/Index.html">UserLogSetSeverityLevel</a>, this function's message can be suppressed.  If suppressed, nothing is written to the logbook and the function returns zero.</p>
+
+  <p>The size (or length) of the string passed to <code>Message</code> is unrestricted because it is passed by reference.  This is denoted by STRING[0].  Messages in the UserLog library are truncated by <a href="../../Data Types and Constants/Constants.html"><code>USERLOG_MESSAGE_LENGTH</code></a>.</p>
+
+  <p>The Event ID created for the record entry in the User logbook uses parameters <code>Severity</code> and <code>Code</code> with facility <a href="../../Data Types and Constants/Constants.html"><code>USERLOG_FACILITY</code></a>.  To use a custom facility, see <a href="../UserLogCustom/Index.html">UserLogCustom</a>.</p>
+
+  <p>If an error occurs during execution, an automatic message will be written to the User logbook with a description of the error.  The function will return zero.</p>
+
+  <h2>Example</h2>
+
+  <p>With severity <code>USERLOG_SEVERITY_SUCCESS</code> (0), code <code>1234</code>, and facility <a href="../../Data Types and Constants/Constants.html"><code>USERLOG_FACILITY</code></a> (10), the resulting Event ID is 537527506.  See the Automation Help for more information on ArEventLog's 32-bit Event ID.</p>
+  
+  <p><b>Structured Text</b></p>
+  
+  <div class="code">
+    UserLogBasic(USERLOG_SEVERITY_SUCCESS, 1234, 'Hello World!');
+  </div>
+
+  <br>
+
+  <img src="UserLogBasic ST example.png" alt="UserLogBasic ST example" style="width: 798px; height: 162px;">
+  
+  <p><b>C</b></p>
+
+  <div class="code">
+    UserLogBasic(USERLOG_SEVERITY_SUCCESS, 1234, "Hello World!");
+  </div>
+
+  <br>
+
+  <img src="UserLogBasic C example.png" alt="UserLogBasic C example" style="width: 798px; height: 178px;">
+
+</body>
+</html>
