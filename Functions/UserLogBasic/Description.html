@@ -20,10 +20,15 @@
   <p>If an error occurs during execution, an automatic message will be written to the User logbook with a description of the error.  The function will return zero.</p>
 
   <h2>Example</h2>
-
-  <p>With severity <code>USERLOG_SEVERITY_SUCCESS</code> (0), code <code>1234</code>, and facility <a href="../../Data Types and Constants/Constants.html"><code>USERLOG_FACILITY</code></a> (10), the resulting Event ID is 537527506.  See the Automation Help for more information on ArEventLog's 32-bit Event ID.</p>
   
-  <p><b>Structured Text</b></p>
+  <h3>IEC Structured Text</h3>
+
+  <ul>
+    <li>Severity: <code>USERLOG_SEVERITY_SUCCESS</code> (0)</li>
+    <li>Facility: <code>USERLOG_FACILITY</code> (10)</li>
+    <li>Code: 1234</li>
+    <li>Event ID: 537527506</li>
+  </ul>
   
   <div class="code">
     UserLogBasic(USERLOG_SEVERITY_SUCCESS, 1234, 'Hello World!');
@@ -31,9 +36,16 @@
 
   <br>
 
-  <img src="UserLogBasic ST example.png" alt="UserLogBasic ST example" style="width: 798px; height: 162px;">
+  <img src="UserLogBasic IECST.png" alt="UserLogBasic ST example" style="width: 1039px; height: 533px;">
   
-  <p><b>C</b></p>
+  <h3>ANSI C</h3>
+
+  <ul>
+    <li>Severity: <code>USERLOG_SEVERITY_SUCCESS</code> (0)</li>
+    <li>Facility: <code>USERLOG_FACILITY</code> (10)</li>
+    <li>Code: 1234</li>
+    <li>Event ID: 537527506</li>
+  </ul>
 
   <div class="code">
     UserLogBasic(USERLOG_SEVERITY_SUCCESS, 1234, "Hello World!");
@@ -41,7 +53,7 @@
 
   <br>
 
-  <img src="UserLogBasic C example.png" alt="UserLogBasic C example" style="width: 798px; height: 178px;">
+  <img src="UserLogBasic ANSIC.png" alt="UserLogBasic C example" style="width: 1039px; height: 533px;">
 
 </body>
 </html>
