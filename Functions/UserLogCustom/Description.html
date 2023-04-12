@@ -9,15 +9,56 @@
 <body>
   <h1>Description</h1>
 
-  <p>The UserLogMessage function provides all features of the ArEventLogWrite function block and more, synchronously.  The record's event ID is create from <code>severity</code>, <code>facility</code>, and <code>code</code>.  An <code>origin</code> ID is optionally available to create a record hierarchy.  <code>message</code> is written to the additional log data with <code>arEVENTLOG_ADDFORMAT_TEXT</code>.  <code>object</code> ID provides a optional description from the creator of the record.</p>
+  <p>The UserLogCustom function provides all features of the ArEventLogWrite function block and more, synchronously.  The record's event ID is created from <code>Severity</code>, <code>Facility</code>, and <code>Code</code>.  An <code>Origin</code> ID is optionally available to create a record hierarchy.  <code>Message</code> is written to the additional log data with <code>arEVENTLOG_ADDFORMAT_TEXT</code>.  <code>Object</code> provides a optional description from the creator of the record.</p>
 
-  <p>The timestamp of the record is automatically set with the time at the call of this function.  If <code>object</code> is left NULL, UserLogMessage will automatically read the software object (program) from which this function was called.</p>
+  <p>The timestamp of the record is automatically set with the time at the call of this function.  If <code>Object</code> is left NULL or empty, UserLogCustom will automatically read the software object (program) from which this function was called.</p>
 
-  <p>Depending on the UserLog's current severity level, set by <a href="../UserLogCreate/Index.html">UserLogSetSeverityLevel</a>, this function's message can be suppressed.  If suppressed, nothing is written to the logbook and the function returns zero.</p>
+  <p>Depending on UserLog's current severity level, set by <a href="../UserLogSetSeverityLevel/Index.html">UserLogSetSeverityLevel</a>, this function's message can be suppressed.  If suppressed, nothing is written to the logbook and the function returns zero.</p>
 
-  <p>Just as in <a href="../UserLogFormat/Index.html">UserLogFormat</a>, an arguments structure can be passed with identifies in <code>message</code> to automatically format runtime data.</p>
+  <p>Just as in <a href="../UserLogAdvanced/Index.html">UserLogAdvanced</a>, a <code>Values</code> structure can be passed with identifies in <code>Message</code> to automatically replace with runtime data.</p>
 
   <p>If an error occurs during execution, an automatic message will be written to the User logbook with a description of the error.  The function will return zero.</p>
+
+  <h2>Example</h2>
+
+  <h3>IEC Structured Text</h3>
+
+  <pre class="code">
+VAR
+  FormatValues : UserLogFormatType;
+END_VAR</pre>
+
+  <pre class="code">
+UserLogCreate('Custom', 200000);
+UserLogCustom('Custom', USERLOG_SEVERITY_WARNING, 25, 789, 0, '', 'This message is written to the Custom logbook', FormatValues);</pre>
+
+  <ul>
+    <li>Severity: <code>USERLOG_SEVERITY_WARNING</code> (2)</li>
+    <li>Facility: 25</li>
+    <li>Code: 789</li>
+    <li>Event ID: -1608973547</li>
+  </ul>
+
+  <img src="UserLogCustom IECST.png" alt="UserLogCustom ST example" style="width: 1039px; height: 533px;">
+
+  <h3>ANSI C</h3>
+
+  <pre class="code">
+#include &lt;string.h&gt;
+#include &lt;stdbool.h&gt;</pre>
+
+  <pre class="code">
+UserLogCreate("Custom", 200000);
+UserLogCustom("Custom", USERLOG_SEVERITY_WARNING, 25, 789, 0, NULL, "This message is written to the Custom logbook", NULL);</pre>
+
+  <ul>
+    <li>Severity: <code>USERLOG_SEVERITY_WARNING</code> (2)</li>
+    <li>Facility: 25</li>
+    <li>Code: 789</li>
+    <li>Event ID: -1608973547</li>
+  </ul>
+
+  <img src="UserLogCustom ANSIC.png" alt="UserLogCustom C example" style="width: 1039px; height: 533px;">
 
 </body>
 </html>

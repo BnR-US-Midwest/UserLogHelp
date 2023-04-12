@@ -35,9 +35,6 @@
   <pre class="code">
 VAR
   FormatValues : UserLogFormatType;
-  Severity : USINT;
-  Facility : UINT;
-  Code : UINT;
 END_VAR</pre>
 
   <pre class="code">
@@ -61,10 +58,11 @@ UserLogAdvanced(USERLOG_SEVERITY_INFORMATION, 567, 'Error=%b, Temperature=%f C, 
   <pre class="code">
 VAR
   FormatValues : UserLogFormatType;
-  Severity : USINT;
-  Facility : UINT;
-  Code : UINT;
 END_VAR</pre>
+
+  <pre class="code">
+#include &lt;string.h&gt;
+#include &lt;stdbool.h&gt;</pre>
 
   <pre class="code">
 FormatValues.b[0] = false;
