@@ -9,11 +9,13 @@
 <body>
   <h1>UserLogCreate</h1>
 
-  <p>Create custom logbook. Only use in _INIT routine.</p>
+  <p>Create a custom logbook in an Init subroutine.</p>
+
+  <p>This function returns the status ID from the internal ArEventLogCreate function block call.</p>
 
   <h2>Function</h2>
 
-  <img src="UserLogCreate.svg" alt="UserLogCreate interface" style="width: 361px; height: 111px;">
+  <img src="UserLogCreate.svg" alt="UserLogCreate interface" style="width: 369px; height: 111px;">
 
   <h2>Interface</h2>
 
@@ -26,19 +28,19 @@
     </tr>
     <tr>
       <td>IN</td>
-      <td>name</td>
+      <td>Name</td>
       <td>STRING[0]</td>
       <td>Name of logbook limited to 10 characters</td>
     </tr>
     <tr>
       <td>IN</td>
-      <td>size</td>
+      <td>Size</td>
       <td>UDINT</td>
       <td>Size of logbook in bytes (minimum 4096)</td>
     </tr>
     <tr>
       <td>OUT</td>
-      <td>return</td>
+      <td>Return</td>
       <td>DINT</td>
       <td>Returns ArEventLogCreate status ID</td>
     </tr>

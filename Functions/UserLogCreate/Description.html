@@ -9,11 +9,23 @@
 <body>
   <h1>Description</h1>
 
-  <p>This function wraps the ArEventLogCreate function block into a single call to be performed in the _INIT routine of a program.  It is not permitted to run this function in a _CYCLIC routine because a cycle-time violation will occur.  The ArEventLogCreate requires multiple calls and cannot be called synchronously.</p>
+  <p>This function wraps the ArEventLogCreate function block into a single call to be performed in the Init routine of a program.  It is not permitted to run this function in a Cyclic routine because a cycle-time violation will occur.  The ArEventLogCreate requires multiple calls until complete and cannot be called synchronously.</p>
 
-  <p>The size and name of logbook to be created is given by the user.  Logbook names are limited to 10 characters and the string provided will be truncated if it exceeds this limit.  The logbook is automatically created with persistence option <code>arEVENTLOG_PERSISTENCE_PERSIST</code>.  This means the logbook's memory located is assigned to USERROM.  For alternative options, please use ArEventLogCreate directly.</p>
+  <p>The size and name of logbook to be created is given by the user.  Logbook names are limited to 10 characters and the string provided will be truncated if it exceeds this limit.  The logbook is automatically created with persistence option <code>arEVENTLOG_PERSISTENCE_PERSIST</code>.  This means the logbook's memory location is assigned to USERROM.  For alternative options, please use ArEventLogCreate directly.</p>
 
-  <p>The function returns the status ID from the ArEventLogCreate function block call.  See the ArEventLog library documenation for information on status IDs.  If an error occurs (non-zero status), a message will be written to the User logbook with more information.  No message is written for status ID <code>arEVENTLOG_ERR_LOGBOOK_EXISTS</code> so the UserLogCreate function may be written unconditionally in the _INIT routine. This is because persistent logbooks in USERROM will remain in memory through power-cycles and _INIT routines.</p>
+  <p>The function returns the status ID from the ArEventLogCreate function block call.  See the ArEventLog library documenation for information on status IDs.  If an error occurs (non-zero status), a message will be written to the User logbook with more information.  No message is written for status ID <code>arEVENTLOG_ERR_LOGBOOK_EXISTS</code> so the UserLogCreate function may be written unconditionally in the Init routine. This is because persistent logbooks in USERROM will remain in memory through power-cycles or restarts.</p>
+
+  <h2>Example</h2>
+
+  <h3>IEC Structured Text</h3>
+
+  <pre class="code">
+UserLogCreate('Custom', 200000);</pre>
+
+  <h3>ANSI C</h3>
+
+  <pre class="code">
+UserLogCreate("Custom", 200000);</pre>
 
 </body>
 </html>
