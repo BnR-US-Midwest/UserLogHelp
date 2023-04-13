@@ -91,6 +91,20 @@
           </li>
         </ul>
         <li> <object type="text/sitemap">
+          <param name="Name" value="UserLogEventText">
+          <param name="Local" value="Functions/UserLogEventText/Index.html">
+          <param name="ImageNumber" value="5">
+        </object>
+        </li>
+        <ul>
+          <li> <object type="text/sitemap">
+            <param name="Name" value="Description">
+            <param name="Local" value="Functions/UserLogEventText/Description.html">
+            <param name="ImageNumber" value="11">
+          </object>
+          </li>
+        </ul>
+        <li> <object type="text/sitemap">
           <param name="Name" value="UserLogCreate">
           <param name="Local" value="Functions/UserLogCreate/Index.html">
           <param name="ImageNumber" value="5">

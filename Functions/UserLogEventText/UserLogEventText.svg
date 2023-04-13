@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="496px"
+    height="203px">
+    <defs>
+        <linearGradient
+            id="linearGradient_FB_Header"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="0%">
+            <stop offset="0%" stop-color="#5cacee"/>
+            <stop offset="50%" stop-color="#ccdff8"/>
+            <stop offset="100%" stop-color="#ffffff"/>
+        </linearGradient>
+        <linearGradient
+            id="linearGradient_FB_Header_Safety"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="0%">
+            <stop offset="0%" stop-color="#ffff00"/>
+            <stop offset="50%" stop-color="#ffffcc"/>
+            <stop offset="100%" stop-color="#ffffff"/>
+        </linearGradient>
+        <linearGradient
+            id="linearGradient_FB_Header_SafeDESIGNER"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="0%">
+            <stop offset="0%" stop-color="#ffff00"/>
+            <stop offset="50%" stop-color="#ffff00"/>
+            <stop offset="100%" stop-color="#ffff00"/>
+        </linearGradient>
+        <linearGradient
+            id="linearGradient_FB_BodyArea_1"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="0%">
+            <stop offset="0%" stop-color="#ff7f00"/>
+            <stop offset="50%" stop-color="#ffc8b6"/>
+            <stop offset="100%" stop-color="#ffffff"/>
+        </linearGradient>
+        <linearGradient
+            id="linearGradient_FB_BodyArea_1_Safety"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="0%">
+            <stop offset="0%" stop-color="#ffff00"/>
+            <stop offset="50%" stop-color="#ffffcc"/>
+            <stop offset="100%" stop-color="#ffffff"/>
+        </linearGradient>
+        <linearGradient
+            id="linearGradient_FB_BodyArea_1_SafeDESIGNER"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="0%">
+            <stop offset="0%" stop-color="#ffff00"/>
+            <stop offset="50%" stop-color="#ffff00"/>
+            <stop offset="100%" stop-color="#ffff00"/>
+        </linearGradient>
+        <linearGradient
+            id="linearGradient_FB_BodyArea_2"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="0%">
+            <stop offset="0%" stop-color="#bebebe"/>
+            <stop offset="50%" stop-color="#e4e4e4"/>
+            <stop offset="100%" stop-color="#ffffff"/>
+        </linearGradient>
+        <rect id="FB_Header" height="23px" width="194px" fill="url(#linearGradient_FB_Header)" stroke="black"/>
+        <rect id="FB_Body" height="138px" width="194px" fill="#ffffff"/>
+        <rect id="FB_BodyArea1" height="138px" width="194px" fill="url(#linearGradient_FB_BodyArea_1)"/>
+        <rect id="FB_BodyArea2" height="0px" width="194px" fill="url(#linearGradient_FB_BodyArea_2)"/>
+        <rect id="FB_BodyFrame" height="161px" width="194px" stroke="black" style="fill:none;fill-opacity:1"/>
+    </defs>
+    <use x="205px" y="44px" xlink:href="#FB_Body"/>
+    <use x="205px" y="44px" xlink:href="#FB_BodyArea1"/>
+    <use x="205px" y="182px" xlink:href="#FB_BodyArea2"/>
+    <use x="205px" y="21px" xlink:href="#FB_BodyFrame"/>
+    <use x="205px" y="21px" xlink:href="#FB_Header"/>
+    <text x="302px" y="37px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:middle;writing-mode:lr">UserLogEventText</text>
+    <path d="M 179,55,205,55" stroke="black"/>
+    <text x="166px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:end;writing-mode:lr">STRING</text>
+    <text x="218px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">Logbook</text>
+    <path d="M 179,79,205,79" stroke="black"/>
+    <text x="166px" y="83px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:end;writing-mode:lr">DINT</text>
+    <text x="218px" y="83px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">Event</text>
+    <path d="M 179,101,205,101" stroke="black"/>
+    <text x="166px" y="106px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:end;writing-mode:lr">ArEventLogRecordIDType</text>
+    <text x="218px" y="106px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">Origin</text>
+    <path d="M 179,125,205,125" stroke="black"/>
+    <text x="166px" y="129px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:end;writing-mode:lr">STRING</text>
+    <text x="218px" y="129px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">Object</text>
+    <path d="M 179,147,205,147" stroke="black"/>
+    <text x="166px" y="152px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:end;writing-mode:lr">STRING</text>
+    <text x="218px" y="152px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">Message</text>
+    <path d="M 179,171,205,171" stroke="black"/>
+    <text x="166px" y="175px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:end;writing-mode:lr">UserLogFormatType</text>
+    <text x="218px" y="175px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">Values</text>
+    <path d="M 399,55,425,55" stroke="black"/>
+    <text x="438px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">UDINT</text>
+    <text x="386px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:end;writing-mode:lr">Return</text>
+</svg>
+
