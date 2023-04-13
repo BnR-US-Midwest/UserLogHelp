@@ -17,40 +17,52 @@
       <th>Description</th>
     </tr>
     <tr>
+      <td>USERLOG_MESSAGE_LENGTH</td>
+      <td>UDINT</td>
+      <td>120</td>
+      <td>Maximum length of all messages written to user logbooks</td>
+    </tr>
+    <tr>
       <td>USERLOG_FACILITY</td>
       <td>UINT</td>
-      <td>1</td>
-      <td>Facility number used for UserLogQuick and UserLogFormat functions</td>
+      <td>10</td>
+      <td>Facility number used for UserLogBasic and UserLogAdvanced functions</td>
     </tr>
     <tr>
       <td>USERLOG_ERROR_IDENT</td>
       <td>DINT</td>
-      <td>-536664304</td>
+      <td>-515234032</td>
       <td>An error occurred when calling ArEventLogGetIdent. See User logbook for details</td>
     </tr>
     <tr>
       <td>USERLOG_ERROR_WRITE</td>
       <td>DINT</td>
-      <td>-536664294</td>
+      <td>-515234022</td>
       <td>An error occurred when calling ArEventLogWrite. See User logbook for details</td>
     </tr>
     <tr>
       <td>USERLOG_ERROR_CREATE</td>
       <td>DINT</td>
-      <td>-536664284</td>
+      <td>-515234012</td>
       <td>An error occurred when calling ArEventLogCreate. See User logbook for details</td>
     </tr>
     <tr>
       <td>USERLOG_FORMAT_INDEX</td>
       <td>USINT</td>
-      <td>4</td>
-      <td>Maximum index of each argument type</td>
+      <td>5</td>
+      <td>Maximum index of each runtime data type</td>
     </tr>
     <tr>
       <td>USERLOG_FORMAT_LENGTH</td>
       <td>USINT</td>
       <td>80</td>
-      <td>Length of string argument</td>
+      <td>Length of string runtime data</td>
+    </tr>
+    <tr>
+      <td>USERLOG_EXAMPLE_TEXT_ID</td>
+      <td>DINT</td>
+      <td>1632259616</td>
+      <td>Example Text ID (Event ID) for UserLogEventText function</td>
     </tr>
   </table>
 </body>
