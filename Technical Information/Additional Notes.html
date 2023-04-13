@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Additional Notes</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
@@ -16,9 +17,9 @@
 
   <p><a href="../Functions/UserLogBasic/Index.html">UserLogBasic</a> not only writes a message from code, but can link an additional description through the text system.  The following example is a line a Structured Text code.</p>
 
-  <div class="code">
+  <pre>
     UserLogBasic(USERLOG_SEVERITY_INFORMATION, 1234, 'Hello World!');
-  </div>
+  </pre>
 
   <p>The Event ID for this example is 1611269330.  The severity is 1 (INFORMATION), the facility is 10 (USERLOG_FACILITY), and the code is 1234.  See ArEventLogMakeEventID for more information on how to derive the 32-bit Event ID.</p>
 

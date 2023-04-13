@@ -7,19 +7,15 @@ h1 {
     border-bottom: 1pt solid;
 }
 
-h1.new-header, h2.new-header {
-    padding-top: 25pt;
-}
-
 h2 {
-    font-size: 13pt;
+    font-size: 14pt;
 }
 
 h3 {
     font-size: 12pt;
 }
 
-p, ul, table {
+p, li, td, th {
     font-size: 10pt;
 }
 
@@ -47,12 +43,13 @@ div.note {
     padding: 5pt;
 }
 
-div.code, pre.code {
+pre {
     background-color: #eeeeee;
     font-size: 10pt;
     font-family: 'Courier New', Courier, monospace;
-    padding: 5pt;
-    margin: 10pt 0pt;
+    white-space: pre-line;
+    padding: 10px;
+    margin: 20px 0px;
 }
 
 a {

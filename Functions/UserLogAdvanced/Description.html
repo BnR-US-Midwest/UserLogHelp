@@ -32,17 +32,19 @@
 
   <h3>IEC Structured Text</h3>
 
-  <pre class="code">
-VAR
-  FormatValues : UserLogFormatType;
-END_VAR</pre>
+  <pre>
+    VAR
+    &nbsp;&nbsp;&nbsp;&nbsp;FormatValues : UserLogFormatType;
+    END_VAR
+  </pre>
 
-  <pre class="code">
-FormatValues.b[0] := FALSE;
-FormatValues.f[0] := 23.1;
-FormatValues.i[0] := -1070586087;
-FormatValues.s[0] := 'Starting';
-UserLogAdvanced(USERLOG_SEVERITY_INFORMATION, 567, 'Error=%b, Temperature=%f C, StatusID=%i, State=%s', FormatValues);</pre>
+  <pre>
+    FormatValues.b[0] := FALSE;
+    FormatValues.f[0] := 23.1;
+    FormatValues.i[0] := -1070586087;
+    FormatValues.s[0] := 'Starting';
+    UserLogAdvanced(USERLOG_SEVERITY_INFORMATION, 567, 'Error=%b, Temperature=%f C, StatusID=%i, State=%s', FormatValues);
+  </pre>
 
   <ul>
     <li>Severity: <code>USERLOG_SEVERITY_INFORMATION</code> (1)</li>
@@ -55,21 +57,24 @@ UserLogAdvanced(USERLOG_SEVERITY_INFORMATION, 567, 'Error=%b, Temperature=%f C, 
 
   <h3>ANSI C</h3>
 
-  <pre class="code">
-VAR
-  FormatValues : UserLogFormatType;
-END_VAR</pre>
+  <pre>
+    VAR
+    &nbsp;&nbsp;&nbsp;&nbsp;FormatValues : UserLogFormatType;
+    END_VAR
+  </pre>
 
-  <pre class="code">
-#include &lt;string.h&gt;
-#include &lt;stdbool.h&gt;</pre>
+  <pre>
+    #include &lt;string.h&gt;
+    #include &lt;stdbool.h&gt;
+  </pre>
 
-  <pre class="code">
-FormatValues.b[0] = false;
-FormatValues.f[0] = 23.1;
-FormatValues.i[0] = -1070586087;
-strcpy(FormatValues.s[0], "Starting");
-UserLogAdvanced(USERLOG_SEVERITY_INFORMATION, 567, "Error=%b, Temperature=%f C, StatusID=%i, State=%s", &FormatValues);</pre>
+  <pre>
+    FormatValues.b[0] = false;
+    FormatValues.f[0] = 23.1;
+    FormatValues.i[0] = -1070586087;
+    strcpy(FormatValues.s[0], "Starting");
+    UserLogAdvanced(USERLOG_SEVERITY_INFORMATION, 567, "Error=%b, Temperature=%f C, StatusID=%i, State=%s", &FormatValues);
+  </pre>
 
   <ul>
     <li>Severity: <code>USERLOG_SEVERITY_INFORMATION</code> (1)</li>
