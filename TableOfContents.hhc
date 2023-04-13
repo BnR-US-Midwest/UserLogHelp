@@ -133,15 +133,15 @@
           </li>
         </ul>
         <li> <object type="text/sitemap">
-          <param name="Name" value="Event ID">
-          <param name="Local" value="Functions/Event ID/Index.html">
+          <param name="Name" value="UserLogGet">
+          <param name="Local" value="Functions/UserLogGet/Index.html">
           <param name="ImageNumber" value="5">
         </object>
         </li>
         <ul>
           <li> <object type="text/sitemap">
             <param name="Name" value="Description">
-            <param name="Local" value="Functions/Event ID/Description.html">
+            <param name="Local" value="Functions/UserLogGet/Description.html">
             <param name="ImageNumber" value="11">
           </object>
           </li>

@@ -89,9 +89,9 @@
     <text x="190px" y="37px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:middle;writing-mode:lr">UserLogGetCode</text>
     <path d="M 61,55,87,55" stroke="black"/>
     <text x="48px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:end;writing-mode:lr">DINT</text>
-    <text x="100px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">event</text>
+    <text x="100px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">Event</text>
     <path d="M 292,55,318,55" stroke="black"/>
     <text x="331px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:start;writing-mode:lr">UINT</text>
-    <text x="279px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:end;writing-mode:lr">return</text>
+    <text x="279px" y="60px" style="font-size:12px;fill:#000000;font-family:Arial;text-anchor:end;writing-mode:lr">Return</text>
 </svg>
 

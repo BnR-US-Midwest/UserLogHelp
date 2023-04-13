@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Description</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <h1>Description</h1>
+
+  <p>These functions allow the user to decode an 32-bit event ID into severity, facility, and code.  See ArEventLogMakeEventID function for creating an ID.</p>
+
+  <h2>Example</h2>
+
+  <h3>IEC Structured Text</h3>
+
+  <pre>
+    VAR
+    &nbsp;&nbsp;&nbsp;&nbsp;Severity : USINT;
+    &nbsp;&nbsp;&nbsp;&nbsp;Facility : UINT;
+    &nbsp;&nbsp;&nbsp;&nbsp;Code : UINT;
+    END_VAR
+  </pre>
+
+  <pre>
+    Severity := UserLogGetSeverity(USERLOG_EXAMPLE_TEXT_ID);
+    Facility := UserLogGetFacility(USERLOG_EXAMPLE_TEXT_ID);
+    Code := UserLogGetCode(USERLOG_EXAMPLE_TEXT_ID);
+  </pre>
+
+  <p>"Severity" is 1 (<code>arEVENTLOG_SEVERITY_INFO</code>).  "Facility" is 330 (<code><a href="../../Data Types and Constants/Constants.html">USERLOG_FACILITY</a></code>).  "Code" is 20000.</p>
+
+  <h3>ANSI C</h3>
+
+  <pre>
+    VAR
+    &nbsp;&nbsp;&nbsp;&nbsp;Severity : USINT;
+    &nbsp;&nbsp;&nbsp;&nbsp;Facility : UINT;
+    &nbsp;&nbsp;&nbsp;&nbsp;Code : UINT;
+    END_VAR
+  </pre>
+
+  <pre>
+    Severity = UserLogGetSeverity(USERLOG_EXAMPLE_TEXT_ID);
+    Facility = UserLogGetFacility(USERLOG_EXAMPLE_TEXT_ID);
+    Code = UserLogGetCode(USERLOG_EXAMPLE_TEXT_ID);
+  </pre>
+
+  <p>"Severity" is 1 (<code>arEVENTLOG_SEVERITY_INFO</code>).  "Facility" is 330 (<code><a href="../../Data Types and Constants/Constants.html">USERLOG_FACILITY</a></code>).  "Code" is 20000.</p>
+
+</body>
+</html>
