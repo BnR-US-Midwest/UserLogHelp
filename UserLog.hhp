@@ -1,6 +1,6 @@
 [OPTIONS]
 Compatibility=1.1 or later
-Compiled file=UserLog.chm
+Compiled file=LibUserLog.chm
 Contents file=TableOfContents.hhc
 Default Font=Arial,8,0
 Default Window=HelpWindow
