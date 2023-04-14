@@ -9,9 +9,9 @@
 <body>
   <h1>Technical Information</h1>
 
-  <p>UserLog's source code is written in C.  The implementation utilizes ArEventLog's function blocks to find, create, and write to user logbooks.  Instead of function blocks, which require multiple calls, UserLog includes functions to use as a single synchronous call.</p>
+  <p>UserLog's source code is written in C.  The implementation utilizes ArEventLog's function blocks to find, create, and write to user logbooks.  Instead of function blocks, which require multiple calls, UserLog provides functions for single synchronous call use.</p>
   
-  <p>It is not possible to write to any Automation Runtime system logbook with either UserLog or ArEventLog.  Automation Runtime creates one logbook named "User", the <code>$arlogusr</code> identifier, that permits user writes.  This is done automatically with <a href="../Functions/UserLogBasic/Index.html">UserLogBasic</a> and <a href="../Functions/UserLogAdvanced/Index.html">UserLogAdvanced</a>.</p>
+  <p>It is not possible to write to system logbooks with either UserLog or ArEventLog libraries.  Automation Runtime creates one logbook labelled "User", internally named <code>$arlogusr</code>, that permits user writes.  Messages are automatically written to this logbook with <a href="../Functions/UserLogBasic/Index.html">UserLogBasic</a> and <a href="../Functions/UserLogAdvanced/Index.html">UserLogAdvanced</a>.</p>
 
   <p>Users can create logbooks in an Init routine using <a href="../Functions/UserLogCreate/Index.html">UserLogCreate</a> and subsequently writing to those logbooks with <a href="../Functions/UserLogCustom/Index.html">UserLogCustom</a>.</p>
 
